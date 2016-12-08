@@ -54,18 +54,6 @@
             $sql = "DELETE FROM `" . DB_NAME . "`.`" . TABLE_NAME . "` where id = " . $obj['id'];
             message($conn->query($sql));
             break;
-    
-        case "head":
-            // logic for DELETE here
-            break;
-    
-        case "options":
-            // logic for DELETE here
-            break;
-    
-        default:
-            header('HTTP/1.0 501 Not Implemented');
-            die();
     }
     
     $conn->close();
